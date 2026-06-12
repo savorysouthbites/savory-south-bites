@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savory South Bites – Authentic Kerala Cuisine | Arnhem, Netherlands</title>
+  <meta name="description" content="Authentic Kerala cloud kitchen in Arnhem. Thalassery Dum Biryani, Kerala Fish Curry, Appam & more. Delivering to Arnhem South, Arnhem Central & Nijmegen." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══ LOADER ══ -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <img src="images/logo.png" alt="Savory South Bites" class="loader-logo" />
+      <div class="loader-line"></div>
+    </div>
+  </div>
+
+  <!-- ══ CURSOR ══ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <img src="images/logo.png" alt="Savory South Bites" class="nav-logo-img" />
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#catering">Catering</a></li>
+        <li><a href="#delivery">Delivery</a></li>
+        <li><a href="#order" class="nav-reserve">Reserve a Table</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="home">
+    <div class="hero-media" style="background-image:url('images/biryani.jpg')"></div>
+    <div class="hero-vignette"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-body">
+      <div class="hero-ornament">
+        <span class="orn-line"></span>
+        <span class="orn-diamond">◆</span>
+        <span class="orn-line"></span>
+      </div>
+      <p class="hero-eyebrow">God's Own Country — Arnhem, Netherlands</p>
+      <h1 class="hero-title">
+        <span class="title-script">Authentic</span>
+        <span class="title-serif">KERALA</span>
+        <span class="title-serif italic-serif">Flavours</span>
+      </h1>
+      <div class="hero-ornament">
+        <span class="orn-line"></span>
+        <span class="orn-diamond">◆</span>
+        <span class="orn-line"></span>
+      </div>
+      <p class="hero-tagline">Thalassery Dum Biryani · Slow-cooked Curries · Weekend Delivery</p>
+      <div class="hero-ctas">
+        <a href="#menu" class="cta-primary">Explore the Menu</a>
+        <a href="https://wa.me/31XXXXXXXXX?text=Hi%2C%20I%20want%20to%20place%20an%20order!" class="cta-ghost" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.852L0 24l6.335-1.51A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.358-.213-3.762.897.942-3.648-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
+          Order on WhatsApp
+        </a>
+      </div>
+      <div class="hero-pills">
+        <span>Weekend Delivery</span>
+        <span>Arnhem &amp; Nijmegen</span>
+        <span>Catering Available</span>
+      </div>
+    </div>
+    <div class="scroll-cue">
+      <div class="scroll-line"></div>
+      <p>Scroll</p>
+    </div>
+  </section>
+
+  <!-- ══════════ MARQUEE STRIP ══════════ -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Thalassery Dum Biryani</span><span class="dot">◆</span>
+      <span>Kerala Fish Curry</span><span class="dot">◆</span>
+      <span>Appam &amp; Coconut Stew</span><span class="dot">◆</span>
+      <span>Kerala Sadya</span><span class="dot">◆</span>
+      <span>Beef Ularthiyathu</span><span class="dot">◆</span>
+      <span>Prawn Masala</span><span class="dot">◆</span>
+      <span>Party Catering</span><span class="dot">◆</span>
+      <span>Thalassery Dum Biryani</span><span class="dot">◆</span>
+      <span>Kerala Fish Curry</span><span class="dot">◆</span>
+      <span>Appam &amp; Coconut Stew</span><span class="dot">◆</span>
+      <span>Kerala Sadya</span><span class="dot">◆</span>
+      <span>Beef Ularthiyathu</span><span class="dot">◆</span>
+      <span>Prawn Masala</span><span class="dot">◆</span>
+      <span>Party Catering</span><span class="dot">◆</span>
+    </div>
+  </div>
+
+  <!-- ══════════ STORY ══════════ -->
+  <section class="story section-pad" id="story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-visual reveal-left">
+          <div class="story-img-stack">
+            <img src="images/kerala-spread.jpg" alt="Kerala Feast Spread" class="si-main" />
+            <img src="images/puttu-beef.jpg" alt="Puttu with Kerala Beef Curry" class="si-float" />
+          </div>
+          <div class="story-badge">
+            <p class="badge-num" data-target="500">0</p>
+            <p class="badge-label">+ Happy Orders</p>
+          </div>
+        </div>
+
+        <div class="story-text reveal-right">
+          <div class="section-label">Our Story</div>
+          <h2 class="section-heading">
+            The Taste of Kerala,<br />
+            <em>Crafted with Love</em>
+          </h2>
+          <div class="gold-rule"></div>
+          <p>Savory South Bites was born from a simple desire — to bring the true, unapologetic flavours of Kerala to the Netherlands. Every dish follows traditional family recipes passed down through generations, prepared with the same care and soul as a home-cooked meal.</p>
+          <p>From the iconic <strong>Thalassery Dum Biryani</strong> — fragrant Kaima rice sealed in a dum pot with whole spices — to slow-simmered fish curries in earthen pots, every bite tells the story of God's Own Country.</p>
+          <div class="story-stats">
+            <div class="sstat">
+              <span class="sstat-num" data-target="3">0</span>
+              <span class="sstat-label">Cities Served</span>
+            </div>
+            <div class="sstat-div"></div>
+            <div class="sstat">
+              <span class="sstat-num" data-target="20">0</span><span class="sstat-plus">+</span>
+              <span class="sstat-label">Recipes</span>
+            </div>
+            <div class="sstat-div"></div>
+            <div class="sstat">
+              <span class="sstat-num" data-target="2">0</span><span class="sstat-plus">+</span>
+              <span class="sstat-label">Years in Arnhem</span>
+            </div>
+          </div>
+          <a href="#menu" class="link-arrow">Discover Our Menu <span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PHILOSOPHY BANNER ══════════ -->
+  <div class="philosophy-banner">
+    <div class="philo-bg" style="background-image:url('images/kerala-spread.jpg')"></div>
+    <div class="philo-overlay"></div>
+    <div class="philo-content reveal-up">
+      <div class="section-label light">Our Philosophy</div>
+      <blockquote>
+        "Real Kerala food takes time. We don't rush it.<br />Every grain of rice, every drop of coconut milk — matters."
+      </blockquote>
+      <cite>— The Kitchen at Savory South Bites</cite>
+    </div>
+  </div>
+
+  <!-- ══════════ MENU ══════════ -->
+  <section class="menu-sec section-pad" id="menu">
+    <div class="container">
+      <div class="section-header-split">
+        <div class="reveal-left">
+          <div class="section-label">Weekend Specials</div>
+          <h2 class="section-heading">Our Signature<br /><em>Dishes</em></h2>
+        </div>
+        <div class="menu-header-right reveal-right">
+          <div class="gold-rule short"></div>
+          <p>Menu rotates every weekend. Order by <strong>Thursday midnight</strong> to secure your plate.</p>
+          <a href="https://wa.me/31XXXXXXXXX?text=Please%20add%20me%20to%20the%20weekly%20menu%20list!" class="link-arrow" target="_blank">Get Weekly Updates <span>→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Horizontal scroll gallery -->
+    <div class="menu-scroll-track">
+      <div class="menu-scroll">
+
+        <article class="dish-card">
+          <div class="dish-img">
+            <img src="images/biryani.jpg" alt="Thalassery Dum Biryani" loading="lazy" />
+            <div class="dish-overlay">
+              <a href="https://wa.me/31XXXXXXXXX?text=I'd%20like%20to%20order%20Thalassery%20Dum%20Biryani!" class="dish-order-btn" target="_blank">Order This</a>
+            </div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-tags">
+              <span class="dtag gold">⭐ Best Seller</span>
+              <span class="dtag">Biryani</span>
+            </div>
+            <h3>Thalassery Dum Biryani</h3>
+            <p>Fragrant Kaima rice slow-cooked with tender chicken or mutton in a sealed dum pot. Rich with whole spices, caramelised onions and ghee.</p>
+            <div class="dish-footer">
+              <span class="dish-price">From €14</span>
+              <a href="https://wa.me/31XXXXXXXXX?text=I'd%20like%20to%20order%20Thalassery%20Dum%20Biryani!" target="_blank" class="dish-wa">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.852L0 24l6.335-1.51A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.358-.213-3.762.897.942-3.648-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img">
+            <img src="images/fish-fry.jpg" alt="Kerala Fish Fry" loading="lazy" />
+            <div class="dish-overlay">
+              <a href="https://wa.me/31XXXXXXXXX?text=I'd%20like%20to%20order%20Kerala%20Fish%20Curry!" class="dish-order-btn" target="_blank">Order This</a>
+            </div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-tags">
+              <span class="dtag red">🌶 Spicy</span>
+              <span class="dtag">Curry</span>
+            </div>
+            <h3>Kerala Fish Curry</h3>
+            <p>Traditional Nadan Meen Curry in a tangy kokum and coconut base, slow-cooked in an earthen pot — exactly as amma made it.</p>
+            <div class="dish-footer">
+              <span class="dish-price">From €12</span>
+              <a href="https://wa.me/31XXXXXXXXX?text=I'd%20like%20to%20order%20Kerala%20Fish%20Curry!" target="_blank" class="dish-wa">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.852L0 24l6.335-1.51A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.358-.213-3.762.897.942-3.648-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img">
+            <img src="images/puttu-beef.jpg" alt="Puttu with Coconut Stew" loading="lazy" />
+            <div class="dish-overlay">
+              <a href="https://wa.me/31XXXXXXXXX?text=I'd%20like%20to%20order%20Appam%20with%20Stew!" class="dish-order-btn" target="_blank">Order This</a>
+            </div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-tags">
+              <span class="dtag">Breakfast</span>
+            </div>
+            <h3>Appam &amp; Coconut Stew</h3>
+            <p>Lacy rice-flour hoppers with a spongy centre, paired with a delicate coconut milk stew — the most beloved Kerala breakfast.</p>
+            <div class="dish-footer">
+              <span class="dish-price">From €10</span>
+              <a href="https://wa.me/31XXXXXXXXX?text=I'd%20like%20to%20order%20Appam%20with%20Stew!" target="_blank" class="dish-wa">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.852L0 24l6.335-1.51A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.358-.213-3.762.897.942-3.648-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img">
+            <img src="images/kerala-spread.jpg" alt="Kerala Sadya Spread" loading="lazy" />
+            <div class="dish-overlay">
+              <a href="https://wa.me/31XXXXXXXXX?text=I'd%20like%20to%20order%20Kerala%20Sadya!" class="dish-order-btn" target="_blank">Order This</a>
+            </div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-tags">
+              <span class="dtag green">🎉 Weekend Only</span>
+              <span class="dtag">Traditional</span>
+            </div>
+            <h3>Kerala Sadya</h3>
+            <p>A festive vegetarian feast on a banana leaf — rice, sambar, avial, olan, pachadi, pickle and creamy payasam. Celebration on a leaf.</p>
+            <div class="dish-footer">
+              <span class="dish-price">From €16</span>
+              <a href="https://wa.me/31XXXXXXXXX?text=I'd%20like%20to%20order%20Kerala%20Sadya!" target="_blank" class="dish-wa">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.852L0 24l6.335-1.51A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.358-.213-3.762.897.942-3.648-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img">
+            <img src="images/puttu-beef.jpg" alt="Kerala Beef Curry" loading="lazy" />
+            <div class="dish-overlay">
+              <a href="https://wa.me/31XXXXXXXXX?text=I'd%20like%20to%20order%20Beef%20Ularthiyathu!" class="dish-order-btn" target="_blank">Order This</a>
+            </div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-tags">
+              <span class="dtag">Dry Curry</span>
+            </div>
+            <h3>Beef Ularthiyathu</h3>
+            <p>Slow-cooked beef with roasted coconut, pearl onions, curry leaves and black pepper. Bold, dry and deeply satisfying with porotta.</p>
+            <div class="dish-footer">
+              <span class="dish-price">From €13</span>
+              <a href="https://wa.me/31XXXXXXXXX?text=I'd%20like%20to%20order%20Beef%20Ularthiyathu!" target="_blank" class="dish-wa">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.852L0 24l6.335-1.51A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.358-.213-3.762.897.942-3.648-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="dish-card">
+          <div class="dish-img">
+            <img src="images/fish-fry.jpg" alt="Kerala Fish Fry" loading="lazy" />
+            <div class="dish-overlay">
+              <a href="https://wa.me/31XXXXXXXXX?text=I'd%20like%20to%20order%20Prawn%20Masala!" class="dish-order-btn" target="_blank">Order This</a>
+            </div>
+          </div>
+          <div class="dish-info">
+            <div class="dish-tags">
+              <span class="dtag red">🔥 Must Try</span>
+              <span class="dtag">Seafood</span>
+            </div>
+            <h3>Kerala Prawn Masala</h3>
+            <p>Juicy prawns in a rich gravy of shallots, tomatoes, coconut milk and Kerala spices. Fragrant, fiery and utterly coastal.</p>
+            <div class="dish-footer">
+              <span class="dish-price">From €15</span>
+              <a href="https://wa.me/31XXXXXXXXX?text=I'd%20like%20to%20order%20Prawn%20Masala!" target="_blank" class="dish-wa">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.852L0 24l6.335-1.51A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.358-.213-3.762.897.942-3.648-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
+                WhatsApp
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="menu-scroll-hint reveal-up">Drag to explore more ——→</div>
+    </div>
+  </section>
+
+  <!-- ══════════ CATERING ══════════ -->
+  <section class="catering-sec" id="catering">
+    <div class="catering-split">
+
+      <div class="catering-visual">
+        <img src="images/biryani.jpg" alt="Kerala Catering Spread" />
+        <div class="catering-img-badge reveal-up">
+          <p class="cib-num" data-target="50">0</p>
+          <p class="cib-sub">+ Guests Welcome</p>
+        </div>
+      </div>
+
+      <div class="catering-text reveal-right">
+        <div class="section-label">Events &amp; Catering</div>
+        <h2 class="section-heading">We Bring the Feast<br /><em>to Your Celebration</em></h2>
+        <div class="gold-rule"></div>
+        <p>Whether it's a birthday party, housewarming, Eid gathering or Onam celebration — we bring the full Kerala feast to your door. Freshly cooked, beautifully presented, and unforgettably delicious.</p>
+
+        <div class="catering-list">
+          <div class="cl-item">
+            <div class="cl-icon">🎂</div>
+            <div>
+              <strong>Birthday &amp; House Parties</strong>
+              <p>Custom menus tailored to your guest count and preferences</p>
+            </div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-icon">🌙</div>
+            <div>
+              <strong>Eid &amp; Festival Feasts</strong>
+              <p>Full biryani spreads and traditional sides for large gatherings</p>
+            </div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-icon">🏠</div>
+            <div>
+              <strong>Housewarming &amp; Ceremonies</strong>
+              <p>Traditional Kerala menus for life's meaningful moments</p>
+            </div>
+          </div>
+          <div class="cl-item">
+            <div class="cl-icon">💼</div>
+            <div>
+              <strong>Corporate Lunch Boxes</strong>
+              <p>Kerala-style packed meals for your office or team event</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="catering-ctas">
+          <a href="#order" class="cta-primary dark">Request a Quote</a>
+          <a href="https://wa.me/31XXXXXXXXX?text=Hi%2C%20I%20want%20to%20discuss%20catering%20for%20my%20event!" class="cta-wa" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.852L0 24l6.335-1.51A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.358-.213-3.762.897.942-3.648-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
+            Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════ DELIVERY ══════════ -->
+  <section class="delivery-sec section-pad" id="delivery">
+    <div class="container">
+      <div class="section-header-center">
+        <div class="section-label reveal-fade">Delivery Zones</div>
+        <h2 class="section-heading reveal-up">Where We<br /><em>Deliver</em></h2>
+        <div class="gold-rule center reveal-fade"></div>
+        <p class="section-intro reveal-fade">We currently serve three areas. More cities coming soon.</p>
+      </div>
+
+      <div class="delivery-cards">
+        <div class="dcard reveal-up" style="--d:0s">
+          <div class="dcard-num">01</div>
+          <h3>Arnhem South</h3>
+          <div class="dcard-rule"></div>
+          <p>Presikhaaf, Rijkerswoerd, Elderveld, Kronenburg and surrounding areas.</p>
+          <span class="dcard-tag">Free delivery over €30</span>
+        </div>
+        <div class="dcard dcard-featured reveal-up" style="--d:0.12s">
+          <div class="dcard-num">02</div>
+          <h3>Arnhem Central</h3>
+          <div class="dcard-rule"></div>
+          <p>City centre, Klarendal, Spijkerkwartier, Velperpoort and Arnhem Noord.</p>
+          <span class="dcard-tag">Free delivery over €30</span>
+        </div>
+        <div class="dcard reveal-up" style="--d:0.24s">
+          <div class="dcard-num">03</div>
+          <h3>Nijmegen</h3>
+          <div class="dcard-rule"></div>
+          <p>All areas of Nijmegen. Available weekends with advance pre-order by Thursday.</p>
+          <span class="dcard-tag">Pre-order required</span>
+        </div>
+      </div>
+
+      <div class="delivery-note reveal-up">
+        <div class="dn-icon">◷</div>
+        <p>Deliveries run <strong>Saturday &amp; Sunday</strong>. Order cutoff: <strong>Thursday midnight</strong>. Same-day availability — call us to check.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ ORDER ══════════ -->
+  <section class="order-sec section-pad" id="order">
+    <div class="container">
+      <div class="order-grid">
+
+        <div class="order-left reveal-left">
+          <div class="section-label">Place Your Order</div>
+          <h2 class="section-heading">Ready to<br /><em>Order?</em></h2>
+          <div class="gold-rule"></div>
+          <p>Choose your preferred way to reach us — we'll confirm your order within a few hours.</p>
+
+          <div class="order-channels">
+            <a href="https://wa.me/31XXXXXXXXX?text=Hi%2C%20I%20want%20to%20place%20an%20order!" class="ochannel ochannel-wa" target="_blank" rel="noopener">
+              <div class="oc-icon wa-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.852L0 24l6.335-1.51A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.358-.213-3.762.897.942-3.648-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
+              </div>
+              <div class="oc-text">
+                <strong>WhatsApp</strong>
+                <span>Fastest — we reply in minutes</span>
+              </div>
+              <span class="oc-arrow">→</span>
+            </a>
+
+            <a href="tel:+31XXXXXXXXX" class="ochannel">
+              <div class="oc-icon">📞</div>
+              <div class="oc-text">
+                <strong>Call Us</strong>
+                <span>+31 XX XXXX XXXX · 10am–8pm</span>
+              </div>
+              <span class="oc-arrow">→</span>
+            </a>
+
+            <a href="https://g.page/r/your-google-business-link" class="ochannel" target="_blank" rel="noopener">
+              <div class="oc-icon g-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+              </div>
+              <div class="oc-text">
+                <strong>Google Business</strong>
+                <span>Reviews, hours &amp; directions</span>
+              </div>
+              <span class="oc-arrow">→</span>
+            </a>
+          </div>
+
+          <div class="hours-card">
+            <h4>Order Schedule</h4>
+            <div class="hrow"><span>Mon – Thu</span><span>Orders Open</span></div>
+            <div class="hrow"><span>Thu Midnight</span><span>Cutoff</span></div>
+            <div class="hrow"><span>Sat &amp; Sun</span><span>Delivery Day</span></div>
+            <div class="hrow"><span>Kitchen</span><span>Arnhem, NL</span></div>
+          </div>
+        </div>
+
+        <div class="order-form-wrap reveal-right">
+          <div class="form-header">
+            <h3>Send an Order Request</h3>
+            <p>We'll confirm via WhatsApp or phone within a few hours.</p>
+          </div>
+
+          <form name="order" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="orderForm" class="order-form">
+            <input type="hidden" name="form-name" value="order" />
+            <p style="display:none"><label>Skip: <input name="bot-field" /></label></p>
+
+            <div class="frow">
+              <div class="fgroup">
+                <label>Full Name *</label>
+                <input type="text" name="name" placeholder="Your name" required />
+              </div>
+              <div class="fgroup">
+                <label>Phone / WhatsApp *</label>
+                <input type="tel" name="phone" placeholder="+31 XX XXXX XXXX" required />
+              </div>
+            </div>
+            <div class="frow">
+              <div class="fgroup">
+                <label>Delivery Area *</label>
+                <select name="area" required>
+                  <option value="">Select area…</option>
+                  <option>Arnhem South</option>
+                  <option>Arnhem Central</option>
+                  <option>Nijmegen</option>
+                </select>
+              </div>
+              <div class="fgroup">
+                <label>Delivery Date *</label>
+                <input type="date" name="date" id="dateInput" required />
+              </div>
+            </div>
+            <div class="fgroup full">
+              <label>What would you like to order? *</label>
+              <textarea name="order-details" rows="4" placeholder="e.g. 2× Thalassery Chicken Biryani, 1× Kerala Fish Curry…" required></textarea>
+            </div>
+            <div class="fgroup full">
+              <label>Delivery Address *</label>
+              <input type="text" name="address" placeholder="Street, House number, City" required />
+            </div>
+            <div class="fgroup full">
+              <label>Special Instructions</label>
+              <textarea name="notes" rows="2" placeholder="Spice level, allergies, extra items…"></textarea>
+            </div>
+            <button type="submit" class="submit-btn" id="submitBtn">
+              <span class="btn-text">Send Order Request</span>
+              <span class="btn-loading hidden">Sending…</span>
+            </button>
+            <p class="form-note">For urgent orders, please WhatsApp us directly.</p>
+          </form>
+
+          <div class="form-success hidden" id="formSuccess">
+            <div class="fs-check">✓</div>
+            <h4>Order Request Sent!</h4>
+            <p>We'll confirm your order within a few hours. Thank you for choosing Savory South Bites.</p>
+            <a href="https://wa.me/31XXXXXXXXX?text=Hi%2C%20I%20just%20sent%20an%20order%20form!" class="cta-wa" target="_blank">Also message us on WhatsApp</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="images/logo.png" alt="Savory South Bites" class="footer-logo-img" />
+            </div>
+            <p>Authentic Kerala cloud kitchen bringing the flavours of God's Own Country to Arnhem and beyond.</p>
+            <div class="footer-social">
+              <a href="https://wa.me/31XXXXXXXXX" target="_blank" aria-label="WhatsApp" class="fsoc">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.852L0 24l6.335-1.51A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.358-.213-3.762.897.942-3.648-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h5>Navigate</h5>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#story">Our Story</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#catering">Catering</a></li>
+              <li><a href="#delivery">Delivery</a></li>
+              <li><a href="#order">Order</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Specialities</h5>
+            <ul>
+              <li><a href="#menu">Thalassery Dum Biryani</a></li>
+              <li><a href="#menu">Kerala Fish Curry</a></li>
+              <li><a href="#menu">Appam &amp; Stew</a></li>
+              <li><a href="#menu">Kerala Sadya</a></li>
+              <li><a href="#menu">Beef Ularthiyathu</a></li>
+              <li><a href="#menu">Prawn Masala</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Get in Touch</h5>
+            <ul>
+              <li><a href="https://wa.me/31XXXXXXXXX">WhatsApp Us</a></li>
+              <li><a href="tel:+31XXXXXXXXX">+31 XX XXXX XXXX</a></li>
+              <li>Arnhem, Netherlands</li>
+              <li>Delivery: Sat &amp; Sun</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-ornament">
+          <span class="orn-line"></span>
+          <span class="orn-diamond">◆</span>
+          <span class="orn-line"></span>
+        </div>
+        <p>© 2025 Savory South Bites · Arnhem, Netherlands · Made with love for Kerala cuisine</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp float -->
+  <a href="https://wa.me/31XXXXXXXXX?text=Hi%2C%20I%20want%20to%20order%20from%20Savory%20South%20Bites!" class="wa-float" target="_blank" aria-label="WhatsApp">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.852L0 24l6.335-1.51A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.358-.213-3.762.897.942-3.648-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
