@@ -763,6 +763,11 @@ cite{font-size:.75rem;letter-spacing:.16em;color:var(--gold);text-transform:uppe
 @media(max-width:768px){
   .section-pad{padding:72px 0}
   .container{padding:0 20px}
+  .navbar{padding:12px 0}
+  .navbar.scrolled{padding:10px 0}
+  .nav-inner{padding:0 16px}
+  /* logo smaller + slight left shift so it never overlaps centred text */
+  .nav-logo-img{height:36px;width:36px}
   .nav-links{
     position:fixed;top:0;right:-100%;width:72vw;max-width:300px;height:100vh;
     background:var(--ink);flex-direction:column;align-items:flex-start;
@@ -775,6 +780,16 @@ cite{font-size:.75rem;letter-spacing:.16em;color:var(--gold);text-transform:uppe
   .hamburger{display:flex;z-index:1100}
   .hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
   .hamburger.open span:nth-child(2){transform:rotate(-45deg) translate(5px,-5px)}
+  /* push hero content below the fixed navbar so no text hides behind logo */
+  .hero{align-items:flex-end}
+  .hero-body{
+    padding:72px 20px 80px;
+    width:100%;
+  }
+  .hero-eyebrow{font-size:.65rem;letter-spacing:.16em}
+  .title-bites{font-size:3.4rem;margin-top:-10px}
+  .hero-motto{font-size:.88rem;margin:10px 0 14px}
+  .hero-pills span{font-size:.65rem;padding:5px 12px}
   .story-grid{grid-template-columns:1fr;gap:40px}
   .story-visual{order:-1}
   .story-img-stack{height:340px}
@@ -794,6 +809,8 @@ cite{font-size:.75rem;letter-spacing:.16em;color:var(--gold);text-transform:uppe
 }
 @media(max-width:480px){
   .footer-grid{grid-template-columns:1fr}
-  .title-serif{font-size:3.2rem}
+  .title-serif{font-size:2.6rem;letter-spacing:.1em}
+  .title-bites{font-size:3rem}
   .story-img-stack{height:280px}
+  .hero-ctas .cta-primary,.hero-ctas .cta-ghost{width:100%;justify-content:center;text-align:center}
 }
