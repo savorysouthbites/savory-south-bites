@@ -154,6 +154,7 @@ if (track) {
 // deployed Apps Script /exec URL — see SETUP_ORDER_FORM.md.
 const ORDER_FORM_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwASMTPWeV7XU9ntKA-9-3DTID4Rm8nXvlR-qy_ihL1iJl11heBVb2xwb0fTS943jFs/exec';
 const BUSINESS_WHATSAPP_NUMBER = '31649286005'; // your number, country code, no + or spaces
+const ORDER_FORM_SECRET = '8b356999d2a7bb85f934f05518f0f5fe'; // must match SECRET_KEY in the Apps Script
 
 const form = document.getElementById('orderForm');
 const success = document.getElementById('formSuccess');
@@ -178,6 +179,7 @@ if (form) {
     btn.disabled = true;
 
     const data = Object.fromEntries(new FormData(form).entries());
+    data.secret = ORDER_FORM_SECRET;
 
     try {
       await fetch(ORDER_FORM_SCRIPT_URL, {

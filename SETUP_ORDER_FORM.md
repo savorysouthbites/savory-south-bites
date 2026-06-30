@@ -23,9 +23,17 @@ In row 1, these column headers, in this order:
 
 ```javascript
 const SHEET_NAME = 'Sheet1'; // change only if your tab isn't named "Sheet1"
+const SECRET_KEY = '8b356999d2a7bb85f934f05518f0f5fe'; // must match ORDER_FORM_SECRET in script.js
 
 function doPost(e) {
   const data = JSON.parse(e.postData.contents);
+
+  // reject anything without our secret — blocks random bots that find the URL
+  if (data.secret !== SECRET_KEY) {
+    return ContentService.createTextOutput(JSON.stringify({ status: 'forbidden' }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+
   const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET_NAME);
 
   sheet.appendRow([
@@ -45,6 +53,10 @@ function doPost(e) {
 ```
 
 3. Click the **disk icon** (Save)
+
+> If you ever need to rotate this secret, change `SECRET_KEY` here AND
+> `ORDER_FORM_SECRET` in `script.js` to the same new value, then redeploy
+> (see "If you ever edit the script" below) and push the site change.
 
 ## Step 3 — Deploy as a Web App
 
