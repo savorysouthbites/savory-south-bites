@@ -149,6 +149,12 @@ if (track) {
 }
 
 // ── Order form ────────────────────────────
+// Submits to a Google Apps Script Web App, which appends the order to a
+// Google Sheet (no WhatsApp auto-send). Replace SCRIPT_URL with your
+// deployed Apps Script /exec URL — see SETUP_ORDER_FORM.md.
+const ORDER_FORM_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwASMTPWeV7XU9ntKA-9-3DTID4Rm8nXvlR-qy_ihL1iJl11heBVb2xwb0fTS943jFs/exec';
+const BUSINESS_WHATSAPP_NUMBER = '31649286005'; // your number, country code, no + or spaces
+
 const form = document.getElementById('orderForm');
 const success = document.getElementById('formSuccess');
 
@@ -162,22 +168,51 @@ if (form) {
 
   form.addEventListener('submit', async e => {
     e.preventDefault();
+
+    // honeypot: bots fill every field, real users never see/fill this one
+    if (form.elements['company']?.value) return;
+
     const btn = document.getElementById('submitBtn');
     btn.querySelector('.btn-text').classList.add('hidden');
     btn.querySelector('.btn-loading').classList.remove('hidden');
     btn.disabled = true;
 
+    const data = Object.fromEntries(new FormData(form).entries());
+
     try {
-      await fetch('/', {
+      await fetch(ORDER_FORM_SCRIPT_URL, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(new FormData(form)).toString()
+        mode: 'no-cors', // Apps Script doesn't return CORS headers; response is opaque but the write still happens
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(data)
       });
-    } catch (_) {}
+    } catch (_) {
+      // network failure — still show success so the user isn't blocked
+    }
+
+    // Build a pre-filled WhatsApp message so the customer just taps send
+    const waMessage =
+      `Hi! I'd like to confirm my order:\n\n` +
+      `Name: ${data.name}\n` +
+      `Phone: ${data.phone}\n` +
+      `Area: ${data.area}\n` +
+      `Date: ${data.date}\n` +
+      `Order: ${data['order-details']}\n` +
+      `Address: ${data.address}` +
+      (data.notes ? `\nNotes: ${data.notes}` : '');
+
+    const waLink = document.getElementById('waConfirmLink');
+    if (waLink) {
+      waLink.href = `https://wa.me/${BUSINESS_WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`;
+    }
 
     form.classList.add('hidden');
     success.classList.remove('hidden');
     success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    btn.querySelector('.btn-text').classList.remove('hidden');
+    btn.querySelector('.btn-loading').classList.add('hidden');
+    btn.disabled = false;
   });
 }
 
